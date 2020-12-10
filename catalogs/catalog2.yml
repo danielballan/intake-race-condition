@@ -1,0 +1,5 @@
+sources:
+  source2:
+    driver: csv
+    args:
+      urlpath: "{{ CATALOG_DIR }}/source2.csv"
