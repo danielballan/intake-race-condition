@@ -1,0 +1,12 @@
+diff --git a/intake/catalog/local.py b/intake/catalog/local.py
+index 262d5f9..ae0ca04 100644
+--- a/intake/catalog/local.py
++++ b/intake/catalog/local.py
+@@ -779,6 +779,7 @@ class YAMLFilesCatalog(Catalog):
+                 else:
+                     # store a catalog entry
+                     self._cats[f.path] = entry
++        import time; time.sleep(3)  # TEST
+         for name, entry in list(self._cats.items()):
+             if self._flatten:
+                 entry.reload()
